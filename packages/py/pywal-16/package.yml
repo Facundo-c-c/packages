@@ -1,0 +1,20 @@
+name       : pywal-16
+version    : 3.6.0
+release    : 1
+source     :
+    - https://github.com/eylles/pywal16/archive/refs/tags/3.6.0.tar.gz : 7b87b9f207c309b719da8d85ffe2fa64a180419e9fe1fe6d156a05eefb1221e4
+homepage   : https://github.com/eylles/pywal16
+license    : MIT
+component  : programming.python
+summary    : Generate and change color-schemes on the fly.
+description: |
+    Pywal is a tool that generates a color palette from the dominant colors in an image.
+rundeps    :
+    - feh
+    - imagemagick
+    - swaybg
+    - procps-ng
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
